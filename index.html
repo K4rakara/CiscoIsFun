@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf8">
+		<meta name="title" content="Cisco is Fun">
+		<meta name="description" content="An injoke.">
+		<meta name="keywords" content="Cisco, fun">
+		<meta name="robots" content="index, follow">
+		<meta name="language" content="English">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cisco is Fun</title>
+		<link href="https://fonts.googleapis.com/css?family=Nunito|Kreon&display=swap" rel="stylesheet">
+		<link href="/assets/main.css" rel="stylesheet">
+		<link href="/assets/cisco.css" rel="stylesheet">
+		<link href="./index.css" rel="stylesheet">
+		<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+		<script src="/scripts/scrollbars.js"></script>
+		<script src="/scripts/header-animate.js"></script>
+		<script src="./index.js"></script>
+	</head>
+	<body>
+		<canvas id="nodes-bg"></canvas>
+		<div id="scroll">
+			<div id="contain">
+				
+				<div class="full-section">
+					<div id="cisco-header">Cisco is Fun.</div>
+					<div id="cisco-subheader">If you know, you know.</div>
+				</div>
+
+				<div class="section">
+					<div class="content-box left">
+						<div class="content-box-header">
+							<span class="iconify" data-icon="mdi-run-fast"></span>
+							Quick Reference
+						</div>
+						<cisco>
+							<cmd><device>Switch</device>&gt; enable </cmd><note>Enters privileged EXEC mode.</note><br>
+							<cmd><device>Switch</device># configure terminal </cmd><note>Enters terminal configuration mode.</note><br>
+							<cmd><device>Switch</device><mode>(config)</mode># hostname foo </cmd><note>Sets the hostname to "foo".</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># banner motd "Keep out" </cmd><note>Sets the MOTD to "Keep out".</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># enable secret baz </cmd><note>Sets the enable password to "baz".</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># line con 0 </cmd><note>Enters console line configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config-line)</mode># password bar </cmd><note>Sets the console line password to "bar".</note><br>
+							<cmd><device>foo</device><mode>(config-line)</mode># login </cmd><note>Enables a login screen.</note><br>
+							<cmd><device>foo</device><mode>(config-line)</mode># exit </cmd><note>Exits console line configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># line vty 0 15 </cmd><note>Enters VTY line configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config-line)</mode># password bar </cmd><note>Sets the VTY line password to "bar".</note><br>
+							<cmd><device>foo</device><mode>(config-line)</mode># login </cmd><note>Enables a login screen.</note><br>
+							<cmd><device>foo</device><mode>(config-line)</mode># exit </cmd><note>Exits the VTY line configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># service password-encryption </cmd><note>Encrypts all plaintext passwords.</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># exit </cmd><note>Exits terminal configuration mode.</note><br>
+							<cmd><device>foo</device># copy running-config startup-config</cmd><note>Saves your configuration to NVRAM.</note>
+						</cisco>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="content-box right">
+						<div class="content-box-header">
+							<span class="iconify" data-icon="mdi-book"></span>
+							Reference
+						</div>
+						<a href="">
+							<span class="iconify" data-icon="mdi-hard-hat"></span>
+							<s>Commands and their functions</s> Under construction
+						</a>
+						<a href="">
+							<span class="iconify" data-icon="mdi-hard-hat"></span>
+							<s>Examples</s> Under construction
+						</a>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="content-box left">
+						<div class="content-box-header">
+							<span class="iconify" data-icon="mdi-help"></span>
+							What is this site
+						</div>
+						An injoke that cost me $8.
+					</div>
+				</div>
+
+				<div class="section">
+					<div id="notice">
+						Neither this site or its contents is affiliated in any way with Cisco Systems, Inc.<br>
+						Any and all trademarks of Cisco are property of Cisco Systems, Inc.
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="header">
+			Cisco is Fun.
+		</div>
+		<script src="/scripts/nodes-bg.js"></script>
+	</body>
+</html>

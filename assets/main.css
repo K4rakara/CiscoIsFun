@@ -1,0 +1,157 @@
+html {
+	overflow: hidden;
+	background-color: #080808;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+	font-family: 'Kreon', sans-serif;
+	color: #fcfcfc;
+}
+
+a {
+	display: block;
+	padding: .5em;
+	margin-bottom: 1em;
+	border-radius: 2em;
+	text-decoration: none;
+	color: #0197F6;
+	background-color: #080808;
+	transform: scale(1, 1);
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+
+a:hover {
+	transform: scale(1.0625, 1.0625);
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+
+a:last-child {
+	margin-bottom: 0;
+}
+
+#header {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	#header {
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		padding: .5em;
+		position: fixed;
+		font-size: 2em;
+		transform: translateY(-5em);
+		transition-property: transform;
+		transition-duration: 1s;
+		background: linear-gradient(180deg, rgba(8,8,8,1) 0%, rgba(8,8,8,0) 100%);
+		user-select: none;
+	}
+}
+
+#nodes-bg {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}
+
+#scroll {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	position: fixed;
+	overflow: hidden;
+}
+
+#contain {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding-right: 17px;
+	position: absolute;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#notice {
+	width: 100vw;
+	margin-top: 10vh;
+	text-align: center;
+	color: #2C2B3C;
+	text-shadow: .1em .1em .1em #080808;
+}
+
+.full-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 50vh;
+	position: relative;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 1em;
+	position: relative;
+	transition-property: transform,opacity;
+	transition-duration: 1s;
+}
+
+.content-box {
+	min-width: 40vw;
+	max-width: 80vw;
+	min-height: 10vh;
+	padding: 2em;
+	position: relative;
+	border-radius: 2em;
+	background-color: #2C2B3C;
+	box-shadow: .5em .5em .5em #080808;
+}
+
+.content-box.left {
+	left: 1.5vw;
+}
+
+@media only screen and (max-width: 768px) {
+	.content-box.right {
+		left: 1.5vw;
+	}
+}
+
+.content-box-header {
+	margin-bottom: .5em;
+	font-size: 1.5em;
+	border-bottom: #D62839 .125em solid;
+}
+
+@media only screen and (min-width: 768px) {
+	.full-section {
+		height: 100vh;
+	}
+	.section {
+		margin-bottom: 10em;
+	}
+	.content-box {
+		max-width: 50vw;
+	}
+	.content-box.left {
+		left: 10vw;
+	}
+	.content-box.right {
+		right: 10vw;
+		align-self: end;
+	}
+}

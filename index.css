@@ -1,0 +1,44 @@
+#cisco-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	top: calc(25vh - 10vh);
+	left: 10vw;
+	width: 80vw;
+	height: 10vh;
+	position: absolute;
+	font-weight: bold;
+	font-size: 3em;
+	text-shadow: .1em .1em .1em #080808;
+}
+
+#cisco-subheader {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	top: calc(30vh - 5vh);
+	left: 10vw;
+	width: 80vw;
+	height: 5vh;
+	position: absolute;
+	font-size: 1em;
+	text-shadow: .1em .1em .1em #080808;
+}
+
+@media only screen and (min-width: 768px) {
+	#cisco-header {
+		top: calc(50vh - 10vh);
+		left: 25vw;
+		width: 50vw;
+		font-size: 5em;
+	}
+	
+	#cisco-subheader {
+		top: calc(60vh - 5vh);
+		left: 25vw;
+		width: 50vw;
+		font-size: 2em;
+	}
+}

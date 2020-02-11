@@ -37,7 +37,8 @@
 							<cmd><device>Switch</device># configure terminal </cmd><note>Enters terminal configuration mode.</note><br>
 							<cmd><device>Switch</device><mode>(config)</mode># hostname foo </cmd><note>Sets the hostname to "foo".</note><br>
 							<cmd><device>foo</device><mode>(config)</mode># banner motd "Keep out" </cmd><note>Sets the MOTD to "Keep out".</note><br>
-							<cmd><device>foo</device><mode>(config)</mode># enable secret baz </cmd><note>Sets the enable password to "baz".</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># enable password baz </cmd><note>Sets the <i>unencrypted</i> enable password to "baz".</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># enable secret baz </cmd><note>Sets the <i>encrypted</i> enable password to "baz".</note><br>
 							<cmd><device>foo</device><mode>(config)</mode># line con 0 </cmd><note>Enters console line configuration mode.</note><br>
 							<cmd><device>foo</device><mode>(config-line)</mode># password bar </cmd><note>Sets the console line password to "bar".</note><br>
 							<cmd><device>foo</device><mode>(config-line)</mode># login </cmd><note>Enables a login screen.</note><br>

@@ -47,6 +47,10 @@
 							<cmd><device>foo</device><mode>(config-line)</mode># password bar </cmd><note>Sets the VTY line password to "bar".</note><br>
 							<cmd><device>foo</device><mode>(config-line)</mode># login </cmd><note>Enables a login screen.</note><br>
 							<cmd><device>foo</device><mode>(config-line)</mode># exit </cmd><note>Exits the VTY line configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># interface g0/0 </cmd><note>Enters interface configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config-if)</mode># ip address 192.168.1.2 255.255.255.0 </cmd><note>Sets the IP address of the g0/0 interface to<br>192.168.1.2 with a subnet mask of 255.255.255.0.</note><br>
+							<cmd><device>foo</device><mode>(config-if)</mode># no shutdown </cmd><note>Restarts the interface.</note><br>
+							<cmd><device>foo</device><mode>(config-if)</mode># exit </cmd><note>Exits interface configuration mode.</note><br>
 							<cmd><device>foo</device><mode>(config)</mode># service password-encryption </cmd><note>Encrypts all plaintext passwords.</note><br>
 							<cmd><device>foo</device><mode>(config)</mode># exit </cmd><note>Exits terminal configuration mode.</note><br>
 							<cmd><device>foo</device># copy running-config startup-config</cmd><note>Saves your configuration to NVRAM.</note>

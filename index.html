@@ -53,6 +53,10 @@
 							<cmd><device>foo</device><mode>(config-if)</mode># exit </cmd><note>Exits interface configuration mode.</note><br>
 							<cmd><device>foo</device><mode>(config)</mode># service password-encryption </cmd><note>Encrypts all plaintext passwords.</note><br>
 							<cmd><device>foo</device><mode>(config)</mode># exit </cmd><note>Exits terminal configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config)</mode># router rip </cmd><note>Enters router configuration mode.</note><br>
+							<cmd><device>foo</device><mode>(config-router)</mode># v 2 </cmd><note>Sets it to use version 2 of the RIP spec.</note><br>
+							<cmd><device>foo</device><mode>(config-router)</mode># network x.x.x.x </cmd><note>Adds a network that this router is connected to.</note><br>
+							<cmd><device>foo</device><mode>(config-router)</mode># exit </cmd><note>Exits router configuration mode.</note><br>
 							<cmd><device>foo</device># copy running-config startup-config</cmd><note>Saves your configuration to NVRAM.</note>
 						</cisco>
 					</div>
